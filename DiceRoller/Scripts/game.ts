@@ -54,8 +54,11 @@ function diceRoll() {
 
             game.addChild(tiles[tile]);
 
-            dice = new createjs.Text(rollResult[tile], "15px Consolas", "#000000");
-            game.addChild(dice); // First Child Object that we add to the stage
+            dice.text = rollResult[tile];
+            dice.x = 300 + (110 * tile);
+            dice.y = 300;
+
+            game.addChild(dice);
 
         }
 }
