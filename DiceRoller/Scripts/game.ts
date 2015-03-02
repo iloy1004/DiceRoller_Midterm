@@ -43,7 +43,7 @@ function diceRoll() {
 
         for (var tile = 0; tile < 2; tile++) {
             //if (turn > 0) {
-            stage.removeChild(tiles[tile]);
+            game.removeChild(tiles[tile]);
             //} 
             tiles[tile] = new createjs.Bitmap("/assets/images/" + rollResult[tile] + ".png");
             tiles[tile].x = 110 + (190 * tile);
