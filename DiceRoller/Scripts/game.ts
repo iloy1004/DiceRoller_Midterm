@@ -83,11 +83,11 @@ function main() {
     game.addChild(msg); // First Child Object that we add to the stage
 
     //click Button
-    button = new objects.Button("/assets/images/click.png", 200, 200);
-    button.setScale(81 / 400, 60 / 368);
+    button = new objects.Button("/assets/images/click.png", 300, 300);
+    button.setScale(120 / 400, 100 / 368);
     game.addChild(button.getImage());
 
-    button.getImage().addEventListener("click", buttonClicked);
+    button.getImage().addEventListener("click", diceRoll);
 
 }
 
