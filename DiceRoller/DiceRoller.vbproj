@@ -60,12 +60,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\game.ts" />
     <TypeScriptCompile Include="Scripts\lib\createjs-lib.d.ts" />
     <TypeScriptCompile Include="Scripts\lib\createjs.d.ts" />
     <TypeScriptCompile Include="Scripts\lib\easeljs.d.ts" />
     <TypeScriptCompile Include="Scripts\lib\preloadjs.d.ts" />
     <TypeScriptCompile Include="Scripts\lib\soundjs.d.ts" />
     <TypeScriptCompile Include="Scripts\lib\tweenjs.d.ts" />
+    <TypeScriptCompile Include="Scripts\objects\Button.ts" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -91,6 +93,15 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\1.png" />
+    <Content Include="assets\images\2.png" />
+    <Content Include="assets\images\3.png" />
+    <Content Include="assets\images\4.png" />
+    <Content Include="assets\images\5.png" />
+    <Content Include="assets\images\6.png" />
+    <Content Include="assets\images\click.png" />
+    <Content Include="css\game.css" />
+    <Content Include="index.html" />
     <Content Include="Scripts\lib\easeljs-0.8.0.min.js" />
     <Content Include="Scripts\lib\preloadjs-0.6.0.min.js" />
     <Content Include="Scripts\lib\soundjs-0.6.0.min.js" />
@@ -144,6 +155,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
